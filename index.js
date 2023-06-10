@@ -49,7 +49,7 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, fucntion(data), (err) =>
+  fs.writeFile(fileName, render(data), (err) =>
     err ? console.log(err) : console.log(`Success`)
   );
 }
