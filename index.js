@@ -30,6 +30,7 @@ const questions = [
 ];
 
 function generateSVG(data) {
+  let character = data.character.slice(0, 3);
   let shape = data.shape;
   console.log(shape);
   switch (shape) {
@@ -58,7 +59,7 @@ ${shape.render()}
 
 <text x="50%" y="60%" font-size="50" text-anchor="middle" cominant-baseline = "center" fill="${
     data.characterColor
-  }">${data.character}</text>
+  }">${character}</text>
 
 </svg>`;
 }
